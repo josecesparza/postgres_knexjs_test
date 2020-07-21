@@ -3,6 +3,6 @@
 module.exports = {
   development: {
     client: 'postgresql',
-    connection: 'postgres://localhost/tutorial'
+    connection: 'postgres://postgres:admin@localhost/dbBlog'
   }
 };
