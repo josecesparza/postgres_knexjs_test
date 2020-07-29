@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon",
-    "test": "(dropdb --if-exists api-server-test && createdb api-server-test) && NODE_ENV=test mocha --exit"
+    "test": "(dropdb -U postgres --if-exists dbBlog-test && createdb -U postgres dbBlog-test) && SET NODE_ENV=test mocha --exit"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
