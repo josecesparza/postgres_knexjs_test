@@ -1,12 +1,11 @@
-
-exports.seed = function(knex) {
+exports.seed = function (knex) {
   // Deletes ALL existing entries
   return knex('users').del()
     .then(function () {
       // Inserts seed entries
       return knex('users').insert([
-        {username: 'jose', email:'jose@gmail.com'},
-        {username: 'john', email: 'john@gmail.com'}
+        { username: 'John Doe', email: 'johndoe@example.com' },
+        { username: 'Jane Doe', email: 'janedoe@example.com' }
       ]);
     });
 };
